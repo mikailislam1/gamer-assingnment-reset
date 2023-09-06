@@ -1,0 +1,67 @@
+/* shared style */
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+i{
+    /* font-size: 1.5rem; */
+    margin-left: 10px;
+}
+.fa-youtube{
+    color: #F61C0D;
+}
+/* header styles */
+header{
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+
+}
+.logo{
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+
+}
+nav>h3>span{
+    color: #FF42A5;
+}
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 32px;
+    color: #3C354F;
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 25px;
+}
+nav> ul li > a{
+    text-decoration: none;
+    color: #3C354F;
+}
+.nav-icon{
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+}
+/* responsive in mobile device */
+@media screen and (max-width:576px) {
+    nav{
+        flex-direction: column;
+        margin: 0 30px;
+    }
+    nav>ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
