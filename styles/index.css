@@ -163,7 +163,7 @@ margin-bottom: 15px;
 }
 /* instant section styles */
 .instant{
-    margin: 100px 65px;
+    margin: 100px 65px 0;
 }
 .instant-container{
     display: flex;
@@ -198,8 +198,98 @@ margin-bottom: 15px;
     width: 200px;
     bottom: 150px;
     right: 80px;
+}
+/* i failed to fixed last section many time */
+  /* i fixed the problem ,but in responsiveness i have problem yet in grid */
+.icon-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+} 
+.hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 80px;
+    border-radius: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.1s, border 0.1s;
 
+}
+.hover img {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.hover:hover {
+    color: #ff42a5;
+    border: 2px solid #ff42a5;
+}
 
+/* footer styles */
+footer{
+    background-color: #0B0223;
+}
+.first-letter{
+    color: #FF42A5;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.rest-letter{
+    color: #FFF;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.first-list{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+    list-style: none;
+}
+.second-list{
+    display: flex;
+    justify-content: space-around;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+footer h3{
+    padding-top: 100px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+footer i{
+    color: #FFF;
+    font-size: 2rem;
+}
+footer p{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 100px;
+}
+footer button{
+    background-color: #0B0223;
+    border: none;
+    padding: 0;
+}
+footer button:hover{
+    cursor: pointer;
+}
+.apple{
+    text-align: center;
 }
 /* responsive in mobile device */
 @media screen and (max-width:576px) {
@@ -256,5 +346,21 @@ margin-bottom: 15px;
         top: 80px;
         left: 30px;
     }
-
-}
+    .icon-container{
+        flex-direction: row;
+    }
+    .hover:hover{
+            color: #ff42a5;
+            border: 2px solid #ff42a5;
+        }
+        .first-list{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }  
+        .second-list{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }      
+    }
